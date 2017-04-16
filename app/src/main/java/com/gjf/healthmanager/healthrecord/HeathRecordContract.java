@@ -8,7 +8,7 @@ import com.gjf.healthmanager.MainContract;
  * Created by BlackBeard丶 on 2017/04/10.
  */
 
-public interface HeathrecordContract {
+public interface HeathRecordContract {
     interface View extends BaseView<MainContract.Presenter> {
 
     }

@@ -1,4 +1,4 @@
-package com.gjf.healthmanager.systemsetting;
+package com.gjf.healthmanager.healthrecord;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -13,14 +13,13 @@ import com.gjf.healthmanager.R;
  * Created by BlackBeard丶 on 2017/04/10.
  */
 
-public class SystemSettingFragment extends Fragment {
+public class HeathRecordFragment extends Fragment {
     private View view;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.system_setting_fragment,container,false);
+        view = inflater.inflate(R.layout.health_record_fragment,container,false);
         return view;
     }
 }
-

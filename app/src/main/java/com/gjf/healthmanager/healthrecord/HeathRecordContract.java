@@ -1,5 +1,7 @@
 package com.gjf.healthmanager.healthrecord;
 
+import android.app.Fragment;
+
 import com.gjf.healthmanager.BasePresenter;
 import com.gjf.healthmanager.BaseView;
 import com.gjf.healthmanager.MainContract;
@@ -10,10 +12,15 @@ import com.gjf.healthmanager.MainContract;
 
 public interface HeathRecordContract {
     interface View extends BaseView<MainContract.Presenter> {
+        void showFragmen(Fragment fragment);
 
     }
 
     interface  Presenter extends BasePresenter {
+        void setShowHealthLogFragment();
+        void setShowMedicalMxaminationReport();
+        void setShowMedicalRecords();
+        void setShowQuestionnairInvestigationFragment();
 
     }
 }

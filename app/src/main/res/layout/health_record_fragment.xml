@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#c11db9">
+    android:orientation="vertical">
 
+    <include layout="@layout/health_record_fragment_title" />
 
+    <FrameLayout
+        android:id="@+id/health_record_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/activity_mian_title" />
 
 </LinearLayout>

@@ -6,4 +6,5 @@ package com.gjf.healthmanager;
 
 public interface BasePresenter {
     void start();
+
 }

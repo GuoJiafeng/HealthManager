@@ -19,7 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
-import com.gjf.healthmanager.MainContract;
+import com.gjf.healthmanager.BasePresenter;
 import com.gjf.healthmanager.R;
 import com.gjf.healthmanager.entiy.MedicalExaminationReport;
 import com.gjf.healthmanager.healthrecord.medical_mxamination_report.activity.AddMedicalExaminationReportContractActivitPresenter;
@@ -144,12 +144,14 @@ public class MedicalExaminationReportFragment extends Fragment implements Medica
         }
     }
 
+
+
     @Override
-    public void setPresenter(MainContract.Presenter presenter) {
+    public void setPresenter(BasePresenter presenter) {
 
     }
 
- class ItemClick implements AdapterView.OnItemClickListener {
+    class ItemClick implements AdapterView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             ListView listView = (ListView) parent;

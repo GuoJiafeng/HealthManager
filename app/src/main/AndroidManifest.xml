@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".healthrecord.medical_mxamination_report.activity.AddMedicalExaminationReportContractActivity"/>
+        <activity android:name=".healthrecord.medical_records.activity.AddMedicalRecordsActivity"/>
     </application>
 
 </manifest>

@@ -4,7 +4,6 @@ import android.content.ContentValues;
 
 import com.gjf.healthmanager.BasePresenter;
 import com.gjf.healthmanager.BaseView;
-import com.gjf.healthmanager.MainContract;
 import com.gjf.healthmanager.entiy.MedicalExaminationReport;
 
 import java.util.List;
@@ -14,7 +13,7 @@ import java.util.List;
  */
 
 public interface MedicalExaminationReportContract {
-    interface View extends BaseView<MainContract.Presenter> {
+    interface View extends BaseView{
         void SwitchActivity(Class c);
         void ShowAllMedicalExaminationReport(List<MedicalExaminationReport> list);
         void ShowMedicalExaminationReport();

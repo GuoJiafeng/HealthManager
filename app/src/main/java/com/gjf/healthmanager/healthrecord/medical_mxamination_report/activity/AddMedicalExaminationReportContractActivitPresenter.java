@@ -16,7 +16,7 @@ import java.util.Date;
  */
 
 public class AddMedicalExaminationReportContractActivitPresenter implements AddMedicalExaminationReportContractActivitContract.Presenter{
-   AddMedicalExaminationReportContractActivitContract.View view;
+   private  AddMedicalExaminationReportContractActivitContract.View view;
     private MedicalExaminationReport medicalExaminationReport;
     private Context context;
 

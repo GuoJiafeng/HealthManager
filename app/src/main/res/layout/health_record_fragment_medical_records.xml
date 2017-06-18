@@ -2,5 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无医药记录"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="增加记录"
+            android:id="@+id/health_record_fragment_medical_records_add_bn"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/health_record_fragment_medical_records_listview">
+
+
+        </ListView>
+    </LinearLayout>
 
 </LinearLayout>

@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         // setDefault();
         mainContract = new MainPresenter(this);
         mainContract.setDefaultFragment();
-        layout.setBackgroundColor(Color.parseColor("#c11db9"));
+
     }
 
 
@@ -69,27 +69,27 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         switch (view.getId()) {
             case R.id.health_record_fragment:
                 mainContract.setHeathrecordFragment();
-                layout.setBackgroundColor(Color.parseColor("#c11db9"));
+               // layout.setBackgroundColor(Color.parseColor("#c11db9"));
                 break;
             case R.id.health_analysis_fragment:
                 mainContract.setHealthAnalysisFragment();
-                layout.setBackgroundColor(Color.parseColor("#c9f1cc"));
+              //  layout.setBackgroundColor(Color.parseColor("#c9f1cc"));
                 break;
             case R.id.life_assistant_fragment:
                 mainContract.setLifeAssistantFragment();
-                layout.setBackgroundColor(Color.parseColor("#cec951"));
+               // layout.setBackgroundColor(Color.parseColor("#cec951"));
                 break;
             case R.id.online_search_fragment:
                 mainContract.setOnlinSearcherFragment();
-                layout.setBackgroundColor(Color.parseColor("#d7531f"));
+             //   layout.setBackgroundColor(Color.parseColor("#d7531f"));
                 break;
             case R.id.system_setting_fragment:
                 mainContract.setSystemSettingFragment();
-                layout.setBackgroundColor(Color.parseColor("#101010"));
+               // layout.setBackgroundColor(Color.parseColor("#101010"));
                 break;
             case R.id.test_tool_fragment:
                 mainContract.setTestToolFragment();
-                layout.setBackgroundColor(Color.parseColor("#314cc6"));
+              //  layout.setBackgroundColor(Color.parseColor("#314cc6"));
                 break;
         }
 
